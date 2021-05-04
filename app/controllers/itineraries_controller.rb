@@ -9,12 +9,13 @@ class ItinerariesController < ApplicationController
          render json: itinerary
      end
  
-     def create
-        location = Location.create!(params.require(:location).permit(:country, :image))
-        itinerary = Itinerary.create!(itinerary_params.merge(location_id:location.id))
-        
-        render json: itinerary
-     end
+        def create
+            location = Location.create!(params.require(:location).permit(:country, :image))
+            
+            itinerary = Itinerary.create!(itinerary_params.merge(location_id:location.id))
+    
+            render json: itinerary
+         end
  
      def update
         itinerary = Itinerary.find(params[:id])
