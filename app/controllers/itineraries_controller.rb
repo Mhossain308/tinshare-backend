@@ -18,10 +18,16 @@ class ItinerariesController < ApplicationController
  
      def update
         itinerary = Itinerary.find(params[:id])
-     Itinerary.update(itinerary_params)
+        itinerary.update(itinerary_params)
      
-     render json: itinerary
+        render json: itinerary
      end
+
+     def destroy
+        itinerary = Itinerary.find(params[:id])
+        itinerary.destroy 
+    end
+
      
     
   private

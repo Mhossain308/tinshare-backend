@@ -13,16 +13,16 @@ mohamed = User.create!(
 
 costa_rica = Location.create!(
    country: "Costa Rica",
-   image: " "
+   image: "https://www.anywhere.com/img-a/costa-rica/destinations/arenal/arenal-volcano-lake.jpg/-/w=760 "
 )
 
 mexico = Location.create!(
     country: "Mexico",
-    image: " "
+    image: " https://www.leblancsparesorts.com/cancun/sites/default/files/le-blanc-spa-resort-cancun-home-intro-section-11abr-2019-860x686_0.jpg "
 )
 phil = Location.create!(
     country: "Philippines",
-    image: " "
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/El_Nido_Palawan_2.jpg/1920px-El_Nido_Palawan_2.jpg "
 )
 
 itinerary = Itinerary.create!(
